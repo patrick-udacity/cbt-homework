@@ -1,5 +1,4 @@
 import json
-import pdb
 import random
 import requests
 from selenium import webdriver
@@ -101,8 +100,8 @@ class SeleniumCBT(unittest.TestCase):
     #Testing setkup
     def setUp(self):
 
-        self.username = "patrick@theparkisons.com"
-        self.authkey  = "u70ee7e205f04560"
+        self.username = "user@domainname.com"
+        self.authkey  = "1234567890"
 
         self.api_session = requests.Session()
         self.api_session.auth = (self.username,self.authkey)
